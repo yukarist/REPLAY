@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<Platforms>AnyCPU;x64</Platforms>
+
+		<!-- ★ アプリアイコン -->
+		<ApplicationIcon>Assets\アイコン.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Assets\bg.png" />
+	  <None Remove="Assets\UI.png" />
+	  <None Remove="ggml-small.bin" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Assets\bg.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="Assets\UI.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include=".gitignore\ggml-small.bin">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- ★ icoはResourceにする -->
+		<Resource Include="Assets\アイコン.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\REPLAY.Core\REPLAY.Core.csproj" />
+		<ProjectReference Include="..\REPLAY.Domain\REPLAY.Domain.csproj" />
+		<ProjectReference Include="..\REPLAY.Infrastructure\REPLAY.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.142" />
+		<PackageReference Include="NAudio" Version="2.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include=".gitignore\ggml-base.bin" />
+	  <None Include=".gitignore\OllamaSetup.exe" />
+	</ItemGroup>
+
+</Project>
