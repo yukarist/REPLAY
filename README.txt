@@ -19,6 +19,7 @@ Gemini / Ollama による AI文章補正・要約に対応しています。
 🔇 ノイズ軽減 / フィラー抑制
 🎛 マイク感度調整
 💾 SQLiteローカル保存
+
 🔰 Quick Start
 Gemini モード
 REPLAY を起動
@@ -41,6 +42,7 @@ Ollama を起動
 REPLAY を起動
 AIモードで Ollama を選択
 Start を押す
+
 🤖 AI Modes
 Gemini
 
@@ -64,10 +66,12 @@ API不要
 注意点
 PCスペック依存
 初回セットアップが必要
+
 🔒 Security
 ログデータはローカル (speech.db) に保存
 Gemini利用時のみAPI通信
 Ollama利用時は完全ローカル処理
+
 📦 Whisper Model
 
 REPLAY では Whisper small model を使用しています。
@@ -83,12 +87,14 @@ NAudio
 Whisper
 Gemini API
 Ollama
+
 📌 Roadmap
 OBS Overlay 連携
 AIクリップ抽出
 ログ検索強化
 配信別ログ管理
 モバイル連携
+
 ❤️ About
 
 「配信後、“何を話したか思い出せない”を減らしたい」
